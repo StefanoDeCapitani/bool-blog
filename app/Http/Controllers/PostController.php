@@ -15,7 +15,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all();
-        
+
         return view("posts.index", compact("posts"));
     }
 
@@ -35,9 +35,11 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Post $post)
+    public function store(StoreUpdatePost $request, Post $post)
     {
-        Post::create($request->all());
+        $data = $request->validated();
+
+        Post::create($data);
 
         return redirect()->route("posts.index");
     }
@@ -48,10 +50,11 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Post $post)
     {
-        //
+        return view("posts.show", compact("post"));
     }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -59,9 +62,9 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Post $post)
     {
-        //
+        return view("posts.edit", compact("post"));
     }
 
     /**
