@@ -6,6 +6,7 @@
 
 @section('main-content')
 <form action="">
+    @csrf
     <div class="mb-3">
         <label for="title" class="form-label">Titolo</label>
         <input type="text" class="form-control" id="title" name="title">
