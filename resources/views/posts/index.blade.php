@@ -29,7 +29,7 @@
                             <div class="small text-muted">{{ $post->author }}</div>
                             <h2 class="card-title h4">{{ $post->title }}</h2>
                             <p class="card-text">{{ $post->content }}</p>
-                            <a class="btn btn-primary" href="#!">Read more →</a>
+                            <a class="btn btn-primary" href="{{route("posts.show")}}">Read more →</a>
                         </div>
                     </div>
                 </div>
