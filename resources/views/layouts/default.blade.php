@@ -9,7 +9,7 @@
             <div class="row">
                 <!-- Blog entries-->
                 <div class="col-lg-8">
-                    @yield('posts')
+                    @yield('main-content')
                 </div>
                 <!-- Side widgets-->
                 <div class="col-lg-4">

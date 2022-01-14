@@ -4,7 +4,7 @@
 @section("header-title", "Benvenuto sul Blog di Boolean!")
 @section("header-subtitle", "Sottotitolo homepage")
 
-@section("posts")
+@section("main-content")
 <!-- Featured blog post-->
 <div class="card mb-4">
     <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>

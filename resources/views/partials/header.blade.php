@@ -6,7 +6,7 @@
                 @yield("header-title", "Welcome to Blog Home!")
             </h1>
             <p class="lead mb-0">
-                @yield("header-subtitle", "A Bootstrap 5 starter layout for your next blog homepage")
+                @yield("header-subtitle")
             </p>
         </div>
     </div>
