@@ -5,7 +5,7 @@
 @section("header-title", "Crea un nuovo Post!")
 
 @section('main-content')
-<form action="">
+<form action="{{ route("posts.store") }}" method="POST">
     @csrf
     <div class="mb-3">
         <label for="title" class="form-label">Titolo</label>
